@@ -1,19 +1,6 @@
-#"""
-Classes - EACH IN OWN FILE
-Game
-Player
-AI(Player)
-Human(Player)
-"""
-​
+from player import Player
 
-​
-   
-​
 
-​
-    def choose_gesture(self):
-        # input
-        pass
-​
-
+if __name__ == "__main__":
+    player = Player()
+    player.show_gestures()

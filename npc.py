@@ -1,4 +1,7 @@
-class Human(Player):
+from player import Player
+
+
+class Npc(Player):
     pass
 
 
