@@ -1,10 +1,9 @@
 from player import Player
 import random
+n = 1
 
 
 class Npc(Player):
-    def __init__(self):
-        super().__init__(self)
-        self.choice = random.randint(0, len(self.gestures))
-        self.name = "Zora"
-        self.value = 'Npc'
+    def chosen_gesture(self):
+        self.chosen_gesture = random.choice(self.gestures_list)
+        print(self.chosen_gesture)

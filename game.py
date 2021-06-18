@@ -1,47 +1,45 @@
-from player import Player
 from human import Human
 from npc import Npc
-from gestures import Gestures
 
 
 class Game:
     def __init__(self):
-        self.player_one = Human("player_one")
-        self.player_two = Human("player_two")
+        self.game = Game
 
-    def run_game(self):
-        self.display_welcome()
-        self.choose_game_mode()
-        self.player_one_turn()
-        self.player_two_turn()
-        self.get_winner()
-        self.display_winner()
 
-    def display_welcome():
-        print("welcome to my oop RPSLS game!")
+def display_welcome(self):
+    print("welcome to my oop RPSLS game!")
+    print()
+    print("Scissors cuts Paper")
+    print()
+    print("Paper covers Rock")
+    print()
+    print("Rock crushes Lizard")
+    print()
+    print("Lizard poisons Spock")
+    print()
+    print("Spock smashes Scissors")
+    print()
+    print("Scissors decapitates Lizard")
+    print()
+    print("Lizard eats Paper")
+    print()
+    print("Paper disproves Spock")
+    print()
+    print("Spock vaporizes Rock")
+    print()
+    print("and as it always has, Rock crushes Scissors")
 
-    def choose_game_mode(self):
-        print("How many players?")
-        response = input()
-        if response == 2:
-            self.player_two = Human()
-        else:
-            self.player_two = Npc()
+    player_one = Human()
 
-    def players(self, player_one, player_two):
-        self.player_one = player_one
-        self.player_two = player_two
+    player_two_npc = Npc()
 
-    def player_one_turn(self):
-        print("Choose your gesture:")
-        self.player_one.chosen_gesture = input()
+    self.choose_game_mode = int(input("enter a choice for Opponent (Computer 1, Human 2):"))
+    if self.choose_game_mode == 1:
+        print("Human vs Npc")
+    elif not self.player_two_Npc == 2:
+        print("Human vs Human")
 
-    def player_two_turn(self):
-        print("Choose your gesture:")
-        self.player_two.chosen_gesture = input()
+    def round_loop(self):
+       #round logic
 
-    def computer_turn(self):
-        pass
-
-    def display_winner(self):
-        pass
