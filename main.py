@@ -1,6 +1,5 @@
-from player import Player
+from game import Game
 
-
-if __name__ == "__main__":
-    player = Player()
-    player.show_gestures()
+game = Game()
+Game.run_game()
+print("GAME OVER")
